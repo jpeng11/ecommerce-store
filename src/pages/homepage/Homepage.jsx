@@ -3,10 +3,10 @@ import React from "react";
 import Directory from "../../components/directory/directory";
 import "./HomePage.scss";
 
-const HomePage = () => {
+const HomePage = ({ history }) => {
   return (
     <div className="homepage">
-      <Directory />
+      <Directory history={history} />
     </div>
   );
 };
